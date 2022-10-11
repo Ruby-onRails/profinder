@@ -1,0 +1,23 @@
+<% if @states.present? %>
+  <%= turbo_stream.replace "country_states_list" do %>
+    <div class="form-group" id="country_states_list">
+      <label class="form-label mb-2 mt-3">States</label>
+      <select class="form-select" name="user[state]" id="user_state">
+        <% @states.each do |state| %>
+        <option value="<%=state[0] %>"><%= state[1] %></option>
+        <% end %>
+      </select>
+    </div>
+  <% end %>
+<% end %>
+
+
+
+<% if @country.present? %>
+  <%= turbo_stream.replace "country_code" do %>
+  <div class="form-group" id="country_code">
+    <label class="form-label mb-2 mt-3">Phone Number</label><br>
+    <input class="form-control mb-2 mt-3" value="+<%= @country.country_code %>"/>
+  </div>
+<% end %>
+<% end %>
