@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+**_Added Rspec For Model**_
+
+* `rails g rspec:model model_name`
