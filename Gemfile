@@ -75,3 +75,4 @@ end
 gem 'cssbundling-rails'
 gem 'country_select', '~> 6.0'
 gem 'faker'
+gem 'pry'
